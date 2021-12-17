@@ -8,7 +8,27 @@ body{
 img{
   height: 400px;
 }
-.nav {
+.img-logo{
+  width: 30%;
+  height: 10%;
+}
+.nav-pills{
+  padding-left: 39%;
+  margin-bottom: 119px;
+  font-size: 20px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #ffa500;
+}
+.nav-link {
+  display: block;
+  padding: .5rem 1rem;
+  color: orange;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+.info {
   width: 80%;
   height: 200px;
   margin-top: 50px;
@@ -23,9 +43,16 @@ p.logo{
 p{
   text-align: center; 
   position: relative;
-  top: 80px;
+  top: 155px;
   font-size: 1.5em;
 }
+.p-others{
+  text-align: center; 
+  position: relative;
+  top: -5px;
+  font-size: 1.5em;
+}
+
 .search{
   width: 97%;
   height: 100%;
