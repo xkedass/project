@@ -2,9 +2,7 @@
 body{
   font-family: 'Spartan';
 }
-*, ::after, ::before {
-  box-sizing:unset;
-}
+
 img{
   height: 400px;
 }
@@ -83,20 +81,29 @@ img{
 }
 .others{
   text-align: center;
-  height: 250px;
-  width: 115%;
+  height: 100%;
 }
 .others1{
   background-color: orange;
-  margin-right: 10px;
+  width: 30%;
+  height: 100%;
 }
 .others2{
   background-color: orange;
-  margin-right: 10px;
+  width: 30%;
+  height: 100%;
 }
 .others3{
   background-color: orange;
-  margin-right: 190px;
+  width: 30%;
+  height: 100%;
+ 
+}
+
+
+ .boite1{
+  height: 300px;
+  
 }
 
 
@@ -128,6 +135,4 @@ img{
 
 
 
-
-
-}/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
