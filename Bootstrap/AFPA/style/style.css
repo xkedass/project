@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=Jost:wght@300&family=Montserrat:wght@300;400&family=Open+Sans:wght@400;500;700&family=Poppins&family=Quicksand:wght@600&family=Spartan:wght@300;700;900&display=swap');
+body{
+    font-family: 'Quicksand';
+}
+p{
+    font-size: 1.5em;
+    cursor: pointer;
+}
+li{
+    font-size: 1em;
+    margin-top: 8px;
+}
+btn {
+    font-size: 1.5em;
+    background-color: #86bc25;
+    padding : 0.5em;
+    border-radius: 10px;
+    color : white;
+    cursor: pointer;
+}
+btn:hover{
+    color: black;
+}
+ul{
+    font-size: 1.5em;
+}
+.btn-success {
+    color: #fff;
+    background-color: #86bc25;
+    border-color: #86bc25;
+}
+.search-bar{
+    position : relative;
+    bottom : 900px;
+}
+.card{
+    border-radius: 10px;
+}
+.bandeau{
+    opacity: 0.6;
+}
