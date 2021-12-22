@@ -2,18 +2,24 @@
 
 
 
-/************************************* Section ***************************************/
+/************************************* Header ***************************************/
+
+/************************************* Lieux ***************************************/
 img{
     width: 100%;
-    border-radius: 15px;
     margin-top: 5px;
     padding-left: 5px;
 }
-
+.galerie{
+    -webkit-box-shadow: 14px 4px 3px 5px rgba(147,147,147,0.35); 
+    box-shadow: 14px 4px 3px 5px rgba(147,147,147,0.35);
+}
 h6{
-    font-size: 2.7em;
+    font-size: 3em;
     padding: 0.5em;
     width: 145%;
+    font-family: 'Cinzel';
+    color: black;
 }
 
 P{
@@ -22,7 +28,6 @@ P{
 
 h4{
 margin-top: 20px;
-
 }
 .ytb-img{
 width: 50%;
@@ -30,4 +35,31 @@ border-radius: 50%;
 position: relative;
 left: 40%;
 top:12%;
+}
+.tftable {
+    font-size:12px;color:#333333;
+    width:100%;
+    border-width: 1px;
+    border-color: #f4f9fa;
+    border-collapse: collapse;
+}
+.tftable tr {
+    background-color:#ffffff;
+}
+.tftable td {
+    font-size:20px;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #bcc4c5;
+}
+.tftable tr:hover {
+    background-color:#000000;
+    color: white;
+}
+
+.first{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
