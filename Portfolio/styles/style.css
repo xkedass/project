@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Libre+Barcode+39+Text&family=Lobster&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Libre+Barcode+39+Text&family=Lobster&family=Quicksand&family=Spartan:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: fixed;
+    background-image: url(/media/gradient-background.gif);
+    background-size: cover;
+   
+}
+
+p {
+    font-size: 5em;
+    color: white;
+    font-family: 'Spartan';  
+}
+
+.cercle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    font-family: 'Spartan';
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 4em;
+    color: aliceblue;
+    text-align: right;
+}
