@@ -1,4 +1,6 @@
 
+THEME : PRESENTATION LIEUX AYANT INSPIRE HAYAO MIYAZAKI
+
 Sources : 
 
 https://fr.wikipedia.org/wiki/Studio_Ghibli
@@ -8,4 +10,25 @@ https://www.easyvoyage.com/actualite/miyazaki-et-ses-inspirations-68585
 
 
 
+style.css : 
 
+- Principales fonts (Jost, Cinzel)
+- header 
+- nav 
+- main
+- title 
+- p
+- carrousel 
+- footer
+
+style1.css : 
+- img (grid bootstrap)
+- table
+
+
+effets : 
+- overlay (opacity)
+- hover :
+    - transform : scale  
+    - background-color : #....
+- transition (ease-in-out)
