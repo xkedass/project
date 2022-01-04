@@ -1,0 +1,24 @@
+h1{
+    font-family: 'Bebas Neue';
+}
+
+h1:hover{
+    color:  rgb(140, 140, 247);
+}
+
+img{
+    width: 6%;
+}
+
+
+
+
+hr{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+
+.jquery{
+    background-color: black;
+}

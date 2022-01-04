@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Libre+Barcode+39+Text&family=Lobster&family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Libre+Barcode+39+Text&family=Lobster&family=Quicksand&family=Spartan:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@500&family=Moo+Lah+Lah&family=Quicksand:wght@500&display=swap');
 
 *{
     margin: 0;
@@ -10,28 +11,58 @@
 
 body{
     background: fixed;
-    background-image: url(/media/gradient-background.gif);
-    background-size: cover;
+    background-image: url();
+    background-size: contain;
    
 }
 
 p {
-    font-size: 5em;
-    color: white;
-    font-family: 'Spartan';  
+    font-size: 7em;
+    color: rgb(0, 0, 0);
+    font-family: 'Bebas Neue';  
+    margin-top: 11%;
 }
 
-.cercle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+p:hover {
+    color: rgb(140, 140, 247);
+    transition: 0.5s;
 }
+
+span{
+    font-family: 'Spartan';
+    font-size: 0.2em;
+    position : relative; 
+    bottom: 15%;
+    
+}
+
+
 
 li{
     font-family: 'Spartan';
     text-decoration: none;
     list-style-type: none;
-    font-size: 4em;
-    color: aliceblue;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
     text-align: right;
+    display: inline;
+    padding: 0.5em;
+}
+
+li:hover{
+    background-color: rgb(140, 140, 247);
+    transition: 0.5s;
+    color: cornsilk;
+    border-radius: 15px;
+
+}
+
+.bubble{
+    width: 45%;
+    margin-top: 5%;
+}
+
+.logo{
+    width: 45px;
+    padding-right : 15px;
 }
