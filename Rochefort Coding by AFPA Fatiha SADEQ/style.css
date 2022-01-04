@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=Jost:wght@300;400&family=Montserrat:wght@300;400&family=Open+Sans:wght@400;500;700&family=Poppins&family=Quicksand:wght@400;600&family=Spartan:wght@300;700;900&display=swap');
+
+*{
+    font-family: 'Quicksand';
+    margin: 0;
+}
+
+/********************************* HEADER *************************************/
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    width: 40%;
+}
+
+ul{
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+
+/********************************* CARROUSEL *************************************/
+
+.carrousel{
+    background-color: #39b539 ;
+    color: honeydew;
+    text-align: center;
+    height: 500px;
+    margin-top: 20px;
+}
+
+p{
+    padding-top: 250px;
+}
