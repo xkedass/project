@@ -5,6 +5,9 @@
     margin: 0;
 }
 
+html{
+    height: 300vh;
+}
 /********************************* HEADER *************************************/
 
 header{
@@ -12,6 +15,10 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: fixed;
+    z-index: 111;
+    background-color: white;  
+    width: 100%;
 }
 
 .logo {
@@ -22,10 +29,18 @@ ul{
     list-style-type: none;
     text-decoration: none;
     
+    
 }
 a{
     text-decoration: none;
     color: black;
+}
+
+li{
+    padding: 1% 0 ;
+    text-align: center;
+    line-height: 40px;
+
 }
 
 /********************************* CARROUSEL *************************************/
@@ -35,7 +50,6 @@ a{
     height: 100vh;
     width: 100%;
     overflow: hidden;
-
 }
 
 .bloc video {
@@ -61,16 +75,360 @@ p{
     padding: 10px;
 }
 
-section{
-    width: 300px;
-    height: 500px;
-    background-color: yellowgreen;
-    padding: 1em;
+/********************************* 1) SECTION  *************************************/
+
+.first-section{
+    width: 350px;
+    height: 600px; 
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    
 }
 
 .info{
     background-color: white;
     padding: 1em;
     margin : 1em;
-    margin-top: 10px;
+    margin-top: 15px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    width: 334px;
+    height: 305px;
+    text-align: justify;
 }
+
+h3{
+    color: #84cb31;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+/********************************* 2) SECTION  *************************************/
+
+.icon{
+    width: 12%;
+    padding-right: 20px;
+}
+
+h2{
+    background-color: #84cb31;
+    padding: 0.5em;
+    margin: 1em;
+    color: ghostwhite; 
+}
+
+.details{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding: 1em;
+    margin: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.second-section{
+    width: 350px;
+    height: 700px; 
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+button{
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    background-color: #BA50CC;
+    color : white
+}
+
+/********************************* TECHNOLOGIES  *************************************/
+
+.html{
+    width: 17%;
+}
+.css{
+    width: 17%;
+}
+
+.js{
+    width: 20%;
+}
+
+.react{
+    width : 20%;
+}
+
+.php{
+    width: 25%;
+}
+
+.jquery{
+    background-color: black;
+    width: 20%
+}
+
+.mysql{
+    width: 20%;
+}
+
+.symfony{
+    width: 20%;
+}
+
+.wordpress{
+    width: 20%;
+}
+
+.box{
+    padding: 1em;
+    margin: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/********************************* LIEUX / DATES  *************************************/
+
+h3{
+    margin: 1em;
+}
+
+span{
+    font-style: italic;
+    color: black;
+    font-size: x-small;
+}
+.carte{
+    width: 100%;
+}
+.second-part{
+    width: 100%;
+    height: 500px;
+    background-color: #84cb31;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.agenda-icon{
+    width: 15%;
+    margin-top: 50px;
+   
+}
+.picto-icon{
+    width: 10%;
+    margin-top: 50px;
+   
+}
+
+.descriptif {
+  text-align: center;
+}
+
+/********************************* FORM  *************************************/
+
+.container {
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    overflow: hidden;
+    
+  }
+  /* top-header */
+  .top-header h3 {
+    text-align: center;
+    color: #000000;
+  }
+  .top-header p {
+    color: #cecfd3;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  /* top-header */
+  /* form */
+  .user input,
+  .pass input {
+    width: 100%;
+    height: 35px;
+    border: none;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 40px;
+  }
+  ::placeholder {
+    color: #9ca5b4;
+    font-size: 12px;
+  }
+  .user i,
+  .pass i {
+    position: relative;
+    top: 31px;
+    right: -10px;
+    color: #84cb31;
+  }
+  /* form */
+  /* button */
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+
+  .btn button {
+    width: 50%;
+    border: none;
+    background-color: #BA50CC;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+ 
+/********************************* CONTACT  *************************************/
+
+.logo-afpa{
+    width: 30%;
+}
+.schedule {
+    color: black;
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+footer ul{
+    padding: 0;
+}
+
+footer li{
+    padding: 0;
+    font-size: 0.5em;
+    line-height: 10px;
+
+}
+
+/********************************* MEDIA QUERIES  *************************************/
+
+@media screen and (min-width : 768px) {
+
+    .logo {
+        width: 30%;
+    }
+
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        z-index: 111;
+        background-color: white;  
+        width: 100%;
+    }
+
+    li{
+        display: inline;
+        margin: 0.5em;
+        
+    }
+
+    h1{
+        color: white;
+        margin-top: 120%;
+        padding: 1em;
+        
+    }
+
+    .info{
+        background-color: white;
+        padding: 1em;
+        margin : 1em;
+        margin-top: 15px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        width: 600px;
+        height: 305px;
+        text-align: justify;
+    }
+
+    .second-section{
+        width: 600px;
+        height: 500px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .html{
+        width: 10%;
+    }
+    .css{
+        width: 10%;
+    }
+    
+    .js{
+        width: 12%;
+    }
+    
+    .react{
+        width : 12%;
+    }
+    
+    .php{
+        width: 14%;
+    }
+    
+    .jquery{
+        background-color: black;
+        width: 12%;
+    }
+    
+    .mysql{
+        width: 12%;
+    }
+    
+    .symfony{
+        width: 12%;
+    }
+    
+    .wordpress{
+        width: 12%;
+    }
+
+.first-part{
+    text-align: center;
+}
+.carte{
+        width: 60%;
+    }
+
+.user{
+    width: 30%;
+}
+
+form{
+    top: 20%;
+    left: 20%;
+    transform: (translate(-50%,-50%);
+}
+}
+
