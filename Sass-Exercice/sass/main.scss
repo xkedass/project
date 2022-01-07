@@ -1,0 +1,222 @@
+//variables couleurs
+$yellow: #ff0;
+$lightYellow: #ff4;
+$darkGrey: #222;
+$lightGrey: #444;
+$silver: #eee;
+$light:#fff;
+
+//variables font
+$grand-hotel: "Grand Hotel", serif;
+$open-sans: "Open Sans", Helvetica, Arial, sans-serif;
+/****************************** HEADER *************************************/
+header {
+    background-color: $darkGrey;
+    padding: 2%;
+    h1 {
+        color: $yellow;
+        font-family: $grand-hotel;
+        margin: 0;
+        text-align: center;
+    }
+    p{
+        color: $light;
+        font-family: $open-sans;
+        text-align: center;
+    }
+}
+
+#search {
+    display: block;
+    margin: 0 auto;
+}
+
+aside {
+    background-color: $darkGrey
+}
+
+nav {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li{
+            text-align: center;
+            border-bottom: $yellow 2px solid;
+            width: 50%;
+            margin: 0 auto;
+            padding-bottom: 2%;
+            margin-bottom: 2%;
+            &:last-child {
+                border-bottom: 0;
+            }
+
+            a{
+                color:$silver;
+                font-family: $open-sans;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.copyright {
+    color:$yellow;
+    font-family: $grand-hotel;
+    visibility: hidden;
+
+}
+/////////////////////////////////////// section limonade/////////////////////////
+.limonade {
+    background-image: url("../images/bg-presentation.jpg");
+    background-size: cover;
+    color: $light;
+    padding: 2%;
+    h1 {
+        font-family:$grand-hotel;
+        text-align: left;
+            }
+    p {
+        font-family:$open-sans;
+        text-align: left;
+            }
+            blockquote {
+                text-align: right;
+                margin-right: 10%;
+                margin-left: 5%;
+    .quote {
+        font-family:$open-sans;
+        font-style: italic;
+    }
+    .mag {
+        font-family:$grand-hotel;
+        }
+    }
+}
+
+/////////////////////////////////////// section produits/////////////////////////////
+
+.produits{
+        background-color: $silver;
+    h1,h2{
+        font-family: $grand-hotel;
+        color: $darkGrey;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards img{
+        width: 100%;
+    }
+}
+
+
+figure.product{
+    border: 1px solid $lightGrey;
+    padding: 1%;
+    background-color: $light;
+}
+
+@mixin btn ($darkGrey,$grand-hotel) {
+    background-color: $darkGrey;
+    font-family: $grand-hotel;
+    text-align: center;
+    text-decoration: none;
+    color: $light;
+    padding: 1%;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    
+}
+
+a.more{
+ @include btn ($darkGrey,$grand-hotel)
+}
+
+
+%flexMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+figure.step{
+    @extend %flexMobile;
+
+}
+
+
+/////////////////////////////////////// section productions/////////////////////////////
+
+.production{
+    background-image: url(../images/bg-production.jpg);
+    background-size: cover;
+    padding: 2%;
+    h1,h2{
+        font-family: $grand-hotel;
+        color: $light;
+    }
+    p, figcaption{
+        font-family: $open-sans;
+        color: $light;
+    }
+}
+
+/////////////////////////////////////// section clients /////////////////////////////
+
+.client{
+    background-color: $silver;
+    padding: 2%;
+h1,h2{
+    font-family: $grand-hotel;
+    color: $darkGrey;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cards img{
+    width: 100%;
+}
+}
+
+
+figure.client{
+border: 1px solid $lightGrey;
+padding: 1%;
+background-color: $light;
+@extend %flexMobile;
+
+    blockquote{
+        margin: 0;
+    }
+}
+
+/////////////////////////////////////// section contact /////////////////////////////
+.contact{
+    background-image: url("../images/bg-contact.jpg");
+    background-size: cover;
+    color: $light;
+    padding: 2%;
+    h1 {
+        font-family:$grand-hotel;
+        text-align: left;
+        }
+            p {
+                font-family:$open-sans; 
+                display: flex; 
+                flex-direction: column;
+            }
+            input[type=email], textarea {
+                margin-top: 2%;
+                opacity: 0.7em;
+            }
+}
+

@@ -65,7 +65,7 @@ li{
 
 h1{
     color: white;
-    margin-top: 160%;
+    margin-top: 150%;
     padding: 1em;
 }
 
@@ -259,7 +259,7 @@ span{
   /* form */
   .user input,
   .pass input {
-    width: 100%;
+    width: 80%;
     height: 35px;
     border: none;
     border: 1px solid #e6e6e6;
@@ -353,7 +353,7 @@ footer li{
 
     h1{
         color: white;
-        margin-top: 120%;
+        margin-top: 89%;
         padding: 1em;
         
     }
@@ -421,14 +421,184 @@ footer li{
         width: 60%;
     }
 
-.user{
-    width: 30%;
+
+.container{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-form{
-    top: 20%;
-    left: 20%;
-    transform: (translate(-50%,-50%);
-}
+.btn button {
+    width: 100%;
 }
 
+.icon {
+    width: 7%;
+    padding-right: 20px;
+}
+
+
+.second-part {
+    width: 100%;
+    height: 450px;
+    background-color: #84cb31;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.agenda-icon {
+    width: 7%;
+    margin-top: 50px;
+}
+
+.picto-icon {
+    width: 5%;
+    margin-top: 50px;
+}
+
+}
+
+@media screen and (min-width : 1024px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        position: fixed;
+        z-index: 111;
+        background-color: white;
+        width: 100%;
+    }
+
+    .logo {
+        width: 10%;
+    }
+
+    .bloc video {
+        /* min-width: 100%; */
+        /* min-height: 100%; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: -100;
+        opacity: 0.9;
+    }
+
+    p {
+        margin-top: 86px;
+        color: white;
+        padding: 10px;
+    }
+
+    h1 {
+        color: white;
+        margin-top: 66%;
+        padding: 1em;
+        font-size: 2.5em;
+    }
+
+    .first-section {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .html{
+        width: 8%;
+    }
+    .css{
+        width: 8%;
+    }
+    
+    .js{
+        width: 9%;
+    }
+    
+    .react{
+        width : 10%;
+    }
+    
+    .php{
+        width: 12%;
+    }
+    
+    .jquery{
+        background-color: black;
+        width: 10%;
+    }
+    
+    .mysql{
+        width: 12%;
+    }
+    
+    .symfony{
+        width: 12%;
+    }
+    
+    .wordpress{
+        width: 10%;
+    }
+
+.first-part{
+    text-align: center;
+}
+.carte{
+        width: 50%;
+    }
+    
+    .second-part {
+        width: 100%;
+        height: 400px;
+        background-color: #84cb31;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    p {
+        margin-top: 0px;
+        color: white;
+        padding: 10px;
+    }
+
+    .logo-afpa {
+        width: 10%;
+    }
+}
+
+@media screen and (min-width : 768px) {
+    header {
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        flex-direction: row;
+        position: fixed;
+        z-index: 111;
+        background-color: white;
+        width: 100%;
+    }
+
+    li{
+        font-size: 1.5em;
+    }
+
+    .second-section {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row ;
+    }
+}
+    
