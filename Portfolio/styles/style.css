@@ -24,7 +24,7 @@ p {
 }
 
 p:hover {
-    color: rgb(140, 140, 247);
+    color: #8c8cf7;
     transition: 0.5s;
 }
 

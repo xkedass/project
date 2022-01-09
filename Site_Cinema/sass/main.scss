@@ -1,0 +1,57 @@
+//variables fonts 
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+$inconsolata : 'Arial';
+$robotoMono : 'Roboto';
+
+// variables colors
+$black :#0D0D0D; 
+$yellow :#F2C84B;
+$lightYellow : #F2E205;
+$purple: #7587BF;
+
+//header 
+header{
+    background-color: #0d0d0d;
+    display : flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: $yellow;
+    h1{
+        font-family : $inconsolata;
+        margin : 0;
+        padding: 2%;
+    }
+    ul{
+        text-decoration: none;
+        list-style-type: none;
+        padding: 2%;
+    }
+}
+
+.accueil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+
+    .logo{
+        width: 50%;
+    }
+    .description{
+        text-align: justify;
+    }
+}
+
+.galerie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 50%;
+        padding: 5%;
+    }
+}
