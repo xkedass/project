@@ -102,7 +102,7 @@ figure.product {
   background-color: #fff;
 }
 
-a.more {
+.more {
   background-color: #222;
   font-family: "Grand Hotel", serif;
   text-align: center;
@@ -111,7 +111,38 @@ a.more {
   padding: 1%;
   display: block;
   margin: 0 auto;
+  margin-bottom: 10px;
   width: 50%;
+}
+
+.production .more {
+  background-color: #ff0;
+  font-family: "Grand Hotel", serif;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 1%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 50%;
+  color: #222;
+  border: none;
+}
+
+.btn-submit {
+  background-color: #ff0;
+  font-family: "Grand Hotel", serif;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 1%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 50%;
+  color: #222;
+  border: none;
 }
 
 figure.client, figure.step {
@@ -180,4 +211,89 @@ figure.client blockquote {
 .contact input[type=email], .contact textarea {
   margin-top: 2%;
   opacity: 0.7em;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    position: relative;
+    padding: 5%;
+  }
+  header h1 {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 3em;
+  }
+  header p {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    font-size: 1.5em;
+  }
+  header form {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+  }
+
+  .content {
+    display: flex;
+  }
+
+  aside {
+    width: 30%;
+  }
+
+  main {
+    width: 70%;
+    overflow: hidden;
+  }
+
+  .limonade {
+    height: 50vh;
+  }
+  .limonade h1 {
+    font-size: 3em;
+    text-align: left;
+    width: 65%;
+  }
+  .limonade p {
+    font-size: 20px;
+    width: 55%;
+  }
+  .limonade blockquote {
+    text-align: right;
+    font-size: 1.5em;
+    width: 50%;
+  }
+
+  .client .cards, .production .cards, .produits .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-items: stretch;
+  }
+
+  a.more {
+    margin-right: 40px;
+    width: 20%;
+    font-size: 1.5em;
+  }
+
+  .production .more {
+    margin-right: 40px;
+    width: 20%;
+    font-size: 1.5em;
+  }
+
+  .production h1 {
+    text-align: right;
+  }
+  .production p {
+    text-align: right;
+  }
+  .client .cards p {
+    font-size: 5em;
+  }
 }

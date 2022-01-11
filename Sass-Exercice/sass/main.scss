@@ -60,8 +60,9 @@ nav {
     }
 }
 
+
 .copyright {
-    color:$yellow;
+    color: $yellow;
     font-family: $grand-hotel;
     visibility: hidden;
 
@@ -129,15 +130,28 @@ figure.product{
     padding: 1%;
     display: block;
     margin: 0 auto;
+    margin-bottom: 10px;
     width: 50%;
     
 }
-
-a.more{
+///// BUTTON 
+.more{
  @include btn ($darkGrey,$grand-hotel)
 }
 
+.production .more{
+    @include btn ($yellow, $grand-hotel);
+    color : $darkGrey;
+    border: none;
+}
 
+.btn-submit {
+    @include btn ($yellow, $grand-hotel);
+    color : $darkGrey;
+    border: none;
+}
+
+///// EXTEND
 %flexMobile {
     display: flex;
     flex-direction: column;
@@ -147,7 +161,6 @@ a.more{
 
 figure.step{
     @extend %flexMobile;
-
 }
 
 
@@ -199,7 +212,7 @@ background-color: $light;
     }
 }
 
-/////////////////////////////////////// section contact /////////////////////////////
+/////////////////////////////////////// contact /////////////////////////////
 .contact{
     background-image: url("../images/bg-contact.jpg");
     background-size: cover;
@@ -220,3 +233,117 @@ background-color: $light;
             }
 }
 
+//////////////////////////////////////MEDIA QUERIES/////////////////////////////////////
+
+@media screen and(min-width: 1024px) {
+///////////////////////////////////////// HEADER ///////////////////////////////////////
+    header{
+        position: relative;
+        padding: 5%;
+        h1{
+            position: absolute;
+            top: 5px;
+            left: 10px;
+            font-size: 3em;
+        }
+        p{
+            position: absolute;
+            top :40px;
+            left: 10px; 
+            font-size: 1.5em; 
+        }
+        form{
+            position: absolute;
+            top : 25px;
+            right: 20px;
+
+        }
+    }
+//////////////////////////////////////// NAV-ASIDE ///////////////////////////////////
+    .copyright {
+        visibility: visible;
+        position: absolute;
+        bottom: 0;
+        color: $yellow;
+    }
+/////////////////////////////// FLEX DES 2 BLOCS ASIDE ET MAIN /////////////////////// 
+    .content {
+        display: flex
+    }
+
+    aside {
+        width: 30%;
+    }
+    main {
+        width: 70%; overflow: hidden;
+    }
+//////////////////////////////////////// ACCUEIL /////////////////////////////////////
+.limonade {
+    height: 50vh;
+    h1{
+        font-size: 3em;
+        text-align: left;
+        width: 65%;
+    }
+    p{
+        font-size: 20px;
+        width: 55%;
+    }
+    blockquote{
+        text-align: right;
+        font-size: 1.5em;
+        width: 50%;
+    }
+}
+///////////////////////////////////////EXTEND//////////////////////////////////////////
+%flexDesktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-items: stretch;
+}
+
+///////////////////////////////////////BUTTON//////////////////////////////////////////
+a.more{
+   margin-right: 40px;
+   width: 20%;
+   font-size: 1.5em;
+}
+.production{
+    .more{
+    margin-right: 40px;
+    width: 20%;
+    font-size: 1.5em;
+}}
+
+//////////////////////////////////////// PRODUITS  ///////////////////////////////////
+.produits{
+    .cards {
+        @extend %flexDesktop;  
+    } 
+}
+//////////////////////////////////////// PRODUCTIONS /////////////////////////////////
+.production{
+    h1{
+        text-align: right;
+    }
+    p{
+        text-align: right;
+    }
+    .cards{
+        @extend %flexDesktop;
+    }
+}
+//////////////////////////////////////// CLIENTS ////////////////////////////////
+.client{ 
+    .cards{
+        @extend %flexDesktop;
+        p{
+            font-size: 5em;
+        }
+    }
+
+    }
+
+}

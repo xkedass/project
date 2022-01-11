@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Libre+Barcode+39+Text&family=Lobster&family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Libre+Barcode+39+Text&family=Lobster&family=Quicksand&family=Spartan:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@500&family=Moo+Lah+Lah&family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 *{
     margin: 0;
@@ -10,17 +11,19 @@
 }
 
 body{
-    background: fixed;
-    background-image: url();
-    background-size: contain;
-   
+    background-color: #f3f0e2;
 }
 
 p {
     font-size: 7em;
-    color: rgb(0, 0, 0);
-    font-family: 'Bebas Neue';  
+    color:#8C8CF7;
+    font-family: 'Monserrat', sans-serif;  
     margin-top: 11%;
+
+}
+
+span{
+    color: black;
 }
 
 p:hover {
@@ -35,7 +38,6 @@ span{
     bottom: 15%;
     
 }
-
 
 
 li{
