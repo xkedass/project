@@ -1,0 +1,19 @@
+VARIABLES
+	sexe EST_DU_TYPE CHAINE
+	age EST_DU_TYPE NOMBRE
+	hommePaie EST_DU_TYPE CHAINE
+	femmePaie EST_DU_TYPE CHAINE
+DEBUT_ALGORITHME
+	AFFICHER "Entrez le sexe (M/F)"
+	LIRE sexe
+	AFFICHER "Entrez votre age"
+	LIRE age
+	SI (sexe=="M"ET age>=20 OU sexe=="F"ET age>=18 ET age >= 35 ) ALORS
+		DEBUT_SI
+		AFFICHER "Imposable"
+		FIN_SI
+		SINON
+			DEBUT_SINON
+			AFFICHER "Non Imposable"
+			FIN_SINON
+FIN_ALGORITHME

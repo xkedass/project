@@ -1,0 +1,35 @@
+VARIABLES
+	heures EST_DU_TYPE NOMBRE
+	minutes EST_DU_TYPE NOMBRE
+	secondes EST_DU_TYPE NOMBRE
+DEBUT_ALGORITHME
+	AFFICHER "Entrez les heures"
+	LIRE heures
+	AFFICHER "Entrez les minutes"
+	LIRE minutes
+	AFFICHER "Entrez les secondes"
+	LIRE secondes
+	SI (secondes==59) ALORS
+		DEBUT_SI
+		secondes PREND_LA_VALEUR 0
+		FIN_SI
+	SI (minutes==59) ALORS
+		DEBUT_SI
+		minutes PREND_LA_VALEUR 0
+		FIN_SI
+		SINON
+			DEBUT_SINON
+			minutes PREND_LA_VALEUR minutes+1
+			FIN_SINON
+	SI (heures==23) ALORS
+		DEBUT_SI
+		heures PREND_LA_VALEUR 0
+		FIN_SI
+	SI (minutes==59) ALORS 
+		DEBUT_SI
+		minutes PREND_LA_VALEUR 0
+		FIN_SI
+		
+	
+	AFFICHER "Dans une minute il sera "+heures+":"+minutes+":"+secondes
+FIN_ALGORITHME

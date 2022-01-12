@@ -1,0 +1,17 @@
+fifi  -  02.12.2021
+
+******************************************
+
+******************************************
+
+1   FONCTIONS_UTILISEES
+2   VARIABLES
+3     saluer EST_DU_TYPE CHAINE
+4     nom EST_DU_TYPE CHAINE
+5     direBonjour EST_DU_TYPE CHAINE
+6   DEBUT_ALGORITHME
+7     saluer PREND_LA_VALEUR "Bonjour"
+8     nom PREND_LA_VALEUR "Fifi"
+9     direBonjour PREND_LA_VALEUR saluer + " " + nom
+10    AFFICHER direBonjour
+11  FIN_ALGORITHME

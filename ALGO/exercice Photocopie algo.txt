@@ -1,0 +1,21 @@
+VARIABLES
+	nombre EST_DU_TYPE NOMBRE
+	prix EST_DU_TYPE NOMBRE
+DEBUT_ALGORITHME
+	AFFICHER "Nombre de photocopies"
+	LIRE nombre
+	SI (nombre<=10) ALORS
+		DEBUT_SI
+		prix PREND_LA_VALEUR nombre*0.1
+		FIN_SI
+	SI (nombre<=30) ALORS
+		DEBUT_SI
+		prix PREND_LA_VALEUR (nombre-10)*0.09+1
+		FIN_SI
+	SI (nombre >= 20) ALORS
+		DEBUT_SI
+		prix PREND_LA_VALEUR (nombre-30)*0.08+2.8
+		FIN_SI
+		
+	AFFICHER "Le prix total est : " +prix + "euros"
+FIN_ALGORITHME

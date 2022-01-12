@@ -1,0 +1,31 @@
+VARIABLES
+	heures EST_DU_TYPE NOMBRE
+	minutes EST_DU_TYPE NOMBRE
+	
+DEBUT_ALGORITHME
+	
+	AFFICHER ("Entrez les heures") 
+	LIRE heures
+	AFFICHER ("Entrez les minutes")
+	LIRE minutes
+	
+	
+	SI (minutes == 60) ALORS
+	DEBUT_SI
+	minutes PREND_LA_VALEUR 0
+	FIN_SI
+	
+	minutes PREND_LA_VALEUR minutes + 1 
+	
+	SI (heures == 24) ALORS
+	DEBUT_SI
+	heures PREND_LA_VALEUR 0
+	FIN_SI
+ 
+	
+
+	
+
+AFFICHER "Dans une minute il sera " + heures + ":" + minutes 
+
+FIN_ALGORITHME
