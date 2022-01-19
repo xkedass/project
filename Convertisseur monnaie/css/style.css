@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 *{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Julius Sans One';
 
 }
 
@@ -7,11 +8,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(80, 80, 255);
+    color : white;
 }
 form{
     width: 50%;
     height: 50vh;
-    background-color:rgb(89, 212, 78);
     display: flex;
     flex-direction: column;
     justify-content: space-between;

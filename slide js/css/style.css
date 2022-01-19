@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+body{
+    background-color: rgb(46, 78, 46);
+    overflow: hidden;
+}
+
+.slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+h1{
+    font-size: 5em;
+    color: white;
+    text-align: center;
+    font-family: 'Major Mono Display';
+}
+
+
+.slide img{
+    position: relative;
+    padding: 1em;
+    width: 50%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 20px;
+    
+}
+
+
+
+.first{
+    animation-name: first;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    animation-iteration-count:1;
+
+}
+
+.second {
+    display: none;
+    animation-name: second;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.third{
+    display: none;
+    animation-name: third;
+    animation-duration: 5s;
+    animation-delay: 8s;
+    animation-iteration-count: 1;
+    
+}
+
+#next, #previous{
+    width: 50px;
+}
+
+#next{
+    position: relative;
+    left : 55%;
+    cursor: pointer;
+}
+
+#previous{
+    position: relative;
+    left: 40%;
+    cursor: pointer;
+}
+
+/* @keyframes second {
+    100%{ transform: translateX(-300vh);}
+}
+
+@keyframes first {
+    0%{ visibility : visible; transform: translateX(150vh);}
+    50%{ visibility : visible; transform: translateX(60vh);}
+    100%{ transform: translateX(-200vh);}
+} 
+
+@keyframes third {
+    50%{ visibility : visible; transform: translateX(-70vh);}
+    100%{ transform: translateX(-200vh);}
+}  */

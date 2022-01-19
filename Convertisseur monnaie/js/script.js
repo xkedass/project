@@ -18,7 +18,7 @@ btn.addEventListener("click", function(){
         yen.value=(rouble.value*1.49);
         euro.value=(rouble.value*0.011);
     } else if(yen.value > 0){
-        dollar.value=(yen.value/1.14);
+        dollar.value=(yen.value*0.0087);
         rouble.value=(yen.value/1.49);
         euro.value=(yen.value/130.19);
     }

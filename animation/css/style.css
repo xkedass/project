@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+body{
+    background-color: ivory;
+}
+
+img{
+    border-radius: 20px;
+    padding: 1em;
+    width: 30%;
+    transition:  width 0.5s, height 0.5s ease-in-out;
+    position: relative;
+}
+
+img:hover{
+    width: 35%;
+}
+
+h1{
+    text-align: center;
+    font-size: 4.5em;
+    color: rgb(0, 0, 0);
+    font-family: 'Homemade Apple';
+    transition:  width 0.5s, height 0.5s ease-in-out;
+    animation-name: title;
+    position : relative;
+    animation-duration: 3s;
+    animation-direction: forward;
+    animation-delay: 1.5s;
+    animation-iteration-count: 1;
+}
+
+
+.wrapper{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third{
+    animation-name: first;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+}
+
+.second{
+    animation-name: second;
+    animation-duration: 4s;
+    animation-direction: forward;
+    animation-delay: 1.5s;
+    animation-iteration-count: 1;
+}
+
+.first{
+    animation-name: third;
+    animation-duration: 4s;
+    animation-direction: forward;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes first {
+    0% {transform : translateX(-200vh);
+        transform: translateX(-1000px) rotate(-720deg);
+        filter: blur(50px); 
+        opacity: 0;
+       } 
+    100% {
+        transform: translateX(0) rotate(0deg);
+        filter: blur(0);
+        opacity: 1;
+        }
+    }  
+
+  @keyframes second {
+    0% {transform : translateX(-480vh);
+        transform: translateX(-1000px) rotate(-720deg);
+        filter: blur(50px);
+        opacity: 0
+       } 
+    100% {
+        transform: translateX(0) rotate(0deg);
+        filter: blur(0);
+        opacity: 1;
+        }
+    }  
+  @keyframes third {
+    0% {transform : translateX(-600vh);
+        transform: translateX(-1000px) rotate(-720deg);
+        filter: blur(50px);
+        opacity: 0
+    } 
+
+    100% {
+        transform: translateX(0) rotate(0deg);
+        filter: blur(0);
+        opacity: 1;
+        }
+    }  
+  @keyframes title {
+    0% {transform : translateY(-200vh);} 
+  }  
+
+
+
+
+
+
+
+
+
+  
