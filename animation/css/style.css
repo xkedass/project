@@ -63,41 +63,41 @@ h1{
 
 @keyframes first {
     0% {transform : translateX(-200vh);
-        transform: translateX(-1000px) rotate(-720deg);
+        /* transform: translateX(-1000px) rotate(-720deg);
         filter: blur(50px); 
-        opacity: 0;
+        opacity: 0; */
        } 
-    100% {
+    /* 100% {
         transform: translateX(0) rotate(0deg);
         filter: blur(0);
         opacity: 1;
-        }
+        } */
     }  
 
   @keyframes second {
     0% {transform : translateX(-480vh);
-        transform: translateX(-1000px) rotate(-720deg);
+        /* transform: translateX(-1000px) rotate(-720deg);
         filter: blur(50px);
-        opacity: 0
+        opacity: 0 */
        } 
-    100% {
+    /* 100% {
         transform: translateX(0) rotate(0deg);
         filter: blur(0);
         opacity: 1;
-        }
+        } */
     }  
   @keyframes third {
     0% {transform : translateX(-600vh);
-        transform: translateX(-1000px) rotate(-720deg);
+        /* transform: translateX(-1000px) rotate(-720deg);
         filter: blur(50px);
-        opacity: 0
+        opacity: 0 */
     } 
 
-    100% {
+    /* 100% {
         transform: translateX(0) rotate(0deg);
         filter: blur(0);
         opacity: 1;
-        }
+        } */
     }  
   @keyframes title {
     0% {transform : translateY(-200vh);} 

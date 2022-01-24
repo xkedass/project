@@ -90,13 +90,16 @@ p{
 
 .info{
     background-color: white;
-    padding: 1em;
     margin : 1em;
+    padding: 2%;
     margin-top: 15px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    width: 334px;
     height: 305px;
     text-align: justify;
+}
+
+.info article{
+    font-size: 0.8em;
 }
 
 h3{
@@ -123,7 +126,6 @@ h2{
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     padding: 1em;
     margin: 1em;
-    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;

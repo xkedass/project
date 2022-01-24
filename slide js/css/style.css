@@ -1,77 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
-body{
-    background-color: rgb(46, 78, 46);
-    overflow: hidden;
-}
 
-.slide{
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h1{
+      text-align: center;
+      margin-top: 20px;
+      font-family: 'Major Mono display';
+      color: cornsilk;
+  }
+  body {
+    background: rgb(36, 93, 50);
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  
+  .slider img {
+    max-width: 100%;
+    display: none;
+  }
+
+  img.active {
+    display: block;
+    animation: fade 0.8s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .cont-btn {
+    width: 92%;
+    height: auto;
+    border: 1px solid #000;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.3);
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 60vh;
-}
+  }
 
-h1{
-    font-size: 5em;
-    color: white;
-    text-align: center;
-    font-family: 'Major Mono Display';
-}
-
-
-.slide img{
-    position: relative;
-    padding: 1em;
-    width: 50%;
-    object-fit: cover;
-    height: 100%;
-    border-radius: 20px;
-    
-}
-
-
-
-.first{
-    animation-name: first;
-    animation-duration: 5s;
-    animation-delay: 5s;
-    animation-iteration-count:1;
-
-}
-
-.second {
-    display: none;
-    animation-name: second;
-    animation-duration: 5s;
-    animation-delay: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-.third{
-    display: none;
-    animation-name: third;
-    animation-duration: 5s;
-    animation-delay: 8s;
-    animation-iteration-count: 1;
-    
-}
-
-#next, #previous{
-    width: 50px;
-}
-
-#next{
-    position: relative;
-    left : 55%;
+  .btn-nav {
+    font-size: 50px;
+    margin: 0 15px;
     cursor: pointer;
-}
+    color: cornsilk;
+  }
 
-#previous{
-    position: relative;
-    left: 40%;
-    cursor: pointer;
-}
 
 /* @keyframes second {
     100%{ transform: translateX(-300vh);}
