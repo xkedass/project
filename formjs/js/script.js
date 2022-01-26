@@ -8,14 +8,13 @@ let sizePrenom = prenomTyped.length;
 /////////////////////////////////////////////////////
 let nameTyped = document.querySelector('.nom').value;
 let prenomTyped = document.querySelector('.prenom').value;
+let count = 0;
 
-
-button.addEventListener('click', function (e) {
-    e.preventDefault(); 
-    console.log(nameTyped);
+submit.addEventListener('click', function () {
          if (sizeNom > 2) {
-    console.log(prenomTyped);
     inputName.insertAdjacentHTML('afterend','<p>Votre nom est </p>' + nameTyped);
+    count += count + 1;
+
         } else {
     inputName.insertAdjacentHTML('beforebegin','<p>Veuillez saisir au moins 2 lettres</p>');
         };
