@@ -1,0 +1,206 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+
+body{
+  background-color:#057952;
+  font-family: 'Questrial';
+}
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css);
+img {
+  width: 150px;
+}
+
+/********************************** NAVBAR *****************************************/
+.hm-gradient {
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+.darken-grey-text {
+    color: #ffffff;
+}
+
+.navbar .dropdown-menu a:hover {
+    color: #ffffff !important; 
+}
+.darken-grey-text {
+    color: #ffffff;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: #057952;
+  background-color: #f5ff51 ;
+  width: 65px;
+  border-radius: 15px;
+  padding :0.5em;
+}
+
+.navbar-nav{
+  align-items: end;
+}
+
+.navbar-toggler{
+  width: 75px;
+  border : none;
+}
+
+.navbar-toggler-icon {
+  color: #f5ff51;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: #057952;
+  background-color: #f5ff51;
+  width: 90px;
+  border-radius: 15px;
+  padding: 0.2em;
+  text-align: center;
+}
+.background-img{
+  margin-top: 160px;
+  width: 100%;
+  height: 80%;
+  opacity: 0.8;
+}
+
+.title {
+  position: relative;
+  bottom : 55%;
+  color: #f5ff51;
+  font-family: 'Questrial';
+  font-size: 4em;
+}
+
+h1{
+  color: #f5ff51;
+  font-family: 'Questrial';
+  font-size: 3em;
+}
+
+.no-gutter > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}
+
+button{
+  background-color: #f5ff51;
+  color: #057952;
+  border-radius: 15px;
+  border: none;
+ width: 200px;
+ font-weight: 600;
+}
+/* **********************************CAROUSEL *******************************************************************/
+span{
+  color: #ffffff;
+  font-weight: 800;
+}
+/*********************************** PLANTS ****************************************/
+.plants {
+  border-radius: 50%;
+  margin : 0.9em;
+  width: 60%;
+}
+
+.description {
+  width: 55%;
+}
+/*********************************** ARTICLE ****************************************/
+
+article{
+  color: #ffffff;
+  font-family: 'Questrial';
+  width: 60%;
+  text-align: justify;
+  font-size: 1.2em;
+}
+
+.newspaper {
+  display: flex;
+  justify-content: center;
+  color: #f3e7e9;
+  font-size: 25px;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
+h4{
+  color:#f5ff51;
+}
+
+h2{
+  margin-top: 25px;
+}
+
+/********************************* COMPTE  ******************************************/
+input{
+  border-radius: 15px;
+  border : none;
+}
+
+p, label {
+  color: white;
+}
+
+
+/********************************* CONTACT  ******************************************/
+#hr
+ {
+   background-color:#ffffff;
+   color:#ffffff;
+   -webkit-transform:rotate(90deg);
+   position:absolute;
+   left:130px;
+   border:5px;
+ }
+
+
+ /********************************* SERVICES  ******************************************/
+
+.text-service {
+  color: #057952;
+}
+
+i {
+  font-size: 50px;
+  color: #057952;
+  display: flex;
+  justify-content: center;
+}
+
+
+ /********************************* FOOTER  ******************************************/
+hr{
+  color: #ffffff;
+  border : 5px;
+}
+
+ li {
+  list-style-type: none;
+ }
+
+ a{
+   color: #ffffff;
+ }
+
+ 
+
+/******************************** TABLETTE *****************************************/
+.navbar {
+  overflow: hidden;
+  background-color: #057952;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-collapse{
+  font-size: 1.3em;
+}
+
+
