@@ -5,10 +5,7 @@ let inputMail = document.querySelector('.mail');
 let inputPassword = document.querySelector('.password');
 let inputconfirmPassword = document.querySelector('.confirmPassword');
 let button = document.querySelector('.submit');
-let nameTyped = document.querySelector('.nom').value;
-let prenomTyped = document.querySelector('.prenom').value;
 let count = 0;
-
 
 
 button.addEventListener('click', function (e) {
@@ -17,35 +14,41 @@ let sizeNom = document.querySelector('.nom').value.length;
 let sizePrenom = document.querySelector('.prenom').value.length;
 let nameTyped = document.querySelector('.nom').value;
 let prenomTyped = document.querySelector('.prenom').value;
+
          if (sizeNom > 2) {
-             console.log(sizeNom);
     inputName.insertAdjacentHTML('afterend', `<p>Votre nom est </p> ${nameTyped}`);
-    count += count + 1 ;
+    count += 1 ;
+    console.log(count)
         } else {
     inputName.insertAdjacentHTML('beforebegin','<p>Veuillez saisir au moins 2 lettres</p>');
         }
 
-         if (sizePrenom > 2) {
-            inputPrenom.insertAdjacentHTML('afterend', `<p>Votre prenom est </p> ${prenomTyped}`);
-            count += count + 1 ;
-                } else {
-            inputPrenom.insertAdjacentHTML('beforebegin','<p>Veuillez saisir au moins 2 lettres</p>');
-                };
+        if (sizePrenom > 2) {
+    inputPrenom.insertAdjacentHTML('afterend', `<p>Votre prenom est </p> ${prenomTyped}`);
+    count += 1  ;
+    console.log(count)
+         } else {
+    inputPrenom.insertAdjacentHTML('beforebegin','<p>Veuillez saisir au moins 2 lettres</p>');
+        };
 
         if(inputDate.value == '') {
             inputDate.insertAdjacentHTML('beforebegin','<p>Veuillez saisir une date </p>'); 
         }else{
-            count += count + 1;
+            count += 1;
+            console.log(count)
         }
 
         if(inputMail.value.indexOf('@')) {
-              count += count + 1;
+            count += 1;
+              console.log(count)
         }else{
+
             inputMail.insertAdjacentHTML('beforebegin','<p>Veuillez saisir un mail valide </p>');
         }
 
         if(inputPassword.value === inputconfirmPassword.value){
-            count += count + 1;
+            count += 1;
+            console.log(count)
         }else{
             inputPassword.insertAdjacentHTML('beforebegin','<p> ils ne sont pas identiques </p>');
         }
@@ -60,5 +63,3 @@ let prenomTyped = document.querySelector('.prenom').value;
             
         }
 })
-
-
