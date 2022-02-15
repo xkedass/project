@@ -89,13 +89,60 @@ img {
 .nav-transparent{
   background-color: transparent !important;
 }
+
+.form-control {
+  border-radius: 15px;
+  
+}
+
+
 .title {
   position: relative;
   bottom : 55%;
   color: #f5ff51;
   font-family: 'Questrial';
   font-size: 4em;
+  
 }
+
+.slide-in-elliptic-top-fwd {
+	-webkit-animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+            transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+            transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+            transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}
+@keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+            transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+            transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+            transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}
+
 h1{
   color: #f5ff51;
   font-family: 'Questrial';
@@ -133,29 +180,61 @@ span{
   color: #ffffff;
   font-weight: 800;
 }
+
+
 /*********************************** PLANTS ****************************************/
 .plants {
   border-radius: 50%;
   margin : 0.9em;
   width: 60%;
+  object-fit: cover;
 }
 .description1 {
   width: 55%;
   z-index: -1;
 }
 /*********************************** ARTICLE ****************************************/
+
+
 article {
-  color: #ffffff;
+  color: #000000;
   font-family: 'Questrial';
-  width: 60%;
+  width: 80%;
   text-align: justify;
   font-size: 1.2em;
-}
-.newspaper {
+  margin-top: 30px;
+  margin-bottom: 15px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  color: #f3e7e9;
+  align-items: center;
+  border: #ffffff solid 1px;
+  padding: 1em;
+  background-color:#ffffff;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+
+}
+
+article:hover{
+  background-color: #f5ff51;
+  transition: 0.5s ease-in-out;
+  transform: scale(1.2);
+}
+
+
+
+.newspaper {
+  color: #057952;
   font-size: 25px;
+  background-color:#f5ff51;
+  width: 75px;
+  border-radius: 50%;
+  padding: 1em;
+}
+
+.articles p {
+  color:#000000;
 }
 h3 {
   display: flex;
@@ -167,6 +246,20 @@ h4{
 h2{
   margin-top: 25px;
 }
+
+
+/********************************* COMPTE  ******************************************/
+@media screen and (min-width : 1024px){
+  .p-offre{
+    font-size : 20px;
+  }
+  h2{
+    font-weight: 600;
+    margin-left: 20%;
+  }
+}
+  
+
 /********************************* COMPTE  ******************************************/
 input{
   border-radius: 15px;
