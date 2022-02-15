@@ -7,7 +7,6 @@ body{
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css);
 
-
 /********************************** NAVBAR *****************************************/
 img {
   width: 150px;
@@ -43,10 +42,21 @@ img {
   width: 75px;
   border : none;
 }
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+  background-color: #057952!important;
+}
 .collapse.show {
   display: block;
   background-color: #f5ff51 ;
-  width: 50%;
+  padding: 1em;
+  border-radius: 15px;
 }
 .navbar-toggler-icon {
   display: inline-block;
@@ -57,6 +67,9 @@ img {
   background: no-repeat center center;
   background-size: 100% 100%;
   background-color: #f5ff51;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url("/images/burger-removebg-preview.png");
 }
 .bi-cart-fill{
   color: #f5ff51;
@@ -77,18 +90,16 @@ img {
   padding: 0.2em;
   text-align: center;
 }
+.form-control {
+  border-radius: 15px;
+}
 .background-img{
   margin-top: 160px;
   width: 100%;
   height: 80%;
   opacity: 0.8;
 }
-.nav-colored{
-  background-color: #057952 !important;
-}
-.nav-transparent{
-  background-color: transparent !important;
-}
+
 .title {
   position: relative;
   bottom : 55%;
@@ -96,10 +107,45 @@ img {
   font-family: 'Questrial';
   font-size: 4em;
 }
+
+.slide-in-top {
+	-webkit-animation: slide-in-top 3s ease-in-out NaNs backwards;
+	        animation: slide-in-top 3s ease-in-out NaNs backwards;
+}
+ @-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 h1{
   color: #f5ff51;
   font-family: 'Questrial';
   font-size: 3em;
+}
+.sous-titre {
+  font-size: 20px;
+  text-align: end;
+  font-weight: 100;
 }
 .no-gutter > [class*='col-'] {
   padding-right:0;
@@ -114,11 +160,10 @@ h1{
   width: 100%;
   height: 995px;
   background-color: #e3eeff;
-  margin-top : -200px!important;
 }
 .background-title{
   position: relative;
-  bottom : 50%;
+  bottom : 58%;
 }
 button{
   background-color: #f5ff51;
@@ -133,7 +178,7 @@ span{
   color: #ffffff;
   font-weight: 800;
 }
-/*********************************** PLANTS ****************************************/
+/*********************************** PLANTS ********************************************************************/
 .plants {
   border-radius: 50%;
   margin : 0.9em;
@@ -143,29 +188,49 @@ span{
   width: 55%;
   z-index: -1;
 }
-/*********************************** ARTICLE ****************************************/
+.plant:hover{
+  transform: scale(1.2); 
+}
+/*********************************** ARTICLE *******************************************************************/
 article {
   color: #ffffff;
   font-family: 'Questrial';
-  width: 60%;
+  width: 90%;
   text-align: justify;
   font-size: 1.2em;
+  background-color: white ;
+  border-radius: 15px;
+  padding: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin : 1.2em;
+}
+article:hover{
+  background-color: #f5ff51;
+  transform: scale(1.1);
 }
 .newspaper {
   display: flex;
   justify-content: center;
-  color: #f3e7e9;
+  color: #057952;
   font-size: 25px;
 }
 h3 {
   display: flex;
   justify-content: center;
+  color: #057952;
 }
 h4{
   color:#f5ff51;
+  font-size: 30px;
 }
 h2{
   margin-top: 25px;
+}
+.articles p {
+  color: #057952;
 }
 /********************************* COMPTE  ******************************************/
 input{
@@ -194,6 +259,7 @@ p, label {
       typing 3.5s steps(50, end),
       blink-caret .4s step-end infinite;
   }
+ 
     @media screen and (min-width: 1024px){
     .separator h1{
       font-size: 50px;
@@ -210,20 +276,11 @@ p, label {
     50% { border-color: rgb(255, 255, 255) }
   }
 
-/********************************* CONTACT  ******************************************/
-#hr
- {
-   background-color:#ffffff;
-   color:#ffffff;
-   -webkit-transform:rotate(90deg);
-   position:absolute;
-   left:130px;
-   border:5px;
- }
  /********************************* SERVICES  ******************************************/
 .text-service {
   color: #057952;
 }
+
 i {
   font-size: 50px;
   color: #057952;
@@ -246,18 +303,27 @@ hr{
   }
 /******************************** **********************************TABLETTE **********************************************************************************************************/
 
-/**************************************** NAVBAR ***********************************/
-.navbar {
+/**************************************** NAVBAR **********************************************************************************************/
+.myNav {
   overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
+  background-color: #057952;
+  opacity: 0.9;
+  z-index: 335;
 }
 .navbar-collapse{
   font-size: 1.3em;
 }
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #057952;
+}
 @media screen and (min-width: 768px) { 
-
   /**************************************** PRODUCTS ***********************************/
   .btn-article {
     padding: 0.3em;
@@ -282,8 +348,14 @@ hr{
   padding: 0.3em;
   font-size: 1.5em;
 }
+h2{
+  margin-left : 70px;
+  margin-top: 30px;
+  font-weight: 600;
+}
 }
 @media screen and (min-width: 1440px ) and (max-width : 2560px) {
+ 
   .title{
     font-size: 5em;
   }
@@ -291,7 +363,14 @@ hr{
     position: relative;
     left : 50%;
   }
+  input{
+    width: 300px;
+  }
 }
-  
-
-  
+.mousemove{
+  width: 50px;
+  height: 50px;
+  background-color: #f5ff51;
+  border-radius: 50%;
+  position: absolute;
+}

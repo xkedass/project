@@ -1,16 +1,16 @@
   "use strict";
+let nav = document.querySelector('nav');
+let mousemove = document.querySelector('.mousemove');
 
-let myNav = document.querySelector('.navbar');
-
-window.onscroll = function () { 
-  
-    if (document.body.scroll >= 200 ) {
-        myNav.classList.add("nav-colored");
-        myNav.classList.remove("nav-transparent");
-        console.log('coucou');
-    } 
-    else {
-        myNav.classList.add("nav-transparent");
-        myNav.classList.remove("nav-colored");
+window.addEventListener("scroll", () => {
+    console.log (window.scrollY);
+    if(window.scrollY > 120) {
+        nav.style.backgroundColor = '#057952'; ;
+    } else {
+         nav.style.backgroundColor = 'transparent';
     }
-};
+})
+
+window.addEventListener('mousemove', () => {
+     
+})
