@@ -1,5 +1,3 @@
-
-
 let input = document.querySelector('input');
 let button = document.querySelector('button');
 let list = document.querySelector('.list');
