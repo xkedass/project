@@ -8,6 +8,8 @@ body{
 @import url(https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css);
 
 /********************************** NAVBAR *****************************************/
+
+
 img {
   width: 150px;
 }
@@ -35,8 +37,11 @@ img {
   padding :0.5em;
 }
 .navbar-nav{
-  align-items: end;
+  align-items: center;
   padding-right: 10px;
+}
+.modal-btn{
+  padding-right: 10px !important;
 }
 .navbar-toggler{
   width: 75px;
@@ -65,8 +70,14 @@ img {
   content: "";
   background: no-repeat center center;
   background-size: 100% 100%;
-  background-color: #f5ff51;
 }
+
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("/images/télécharger-removebg-preview\ -\ Copie.png") !important;
+ 
+}
+
 
 .bi-cart-fill{
   color: #f5ff51;
@@ -439,9 +450,6 @@ section .section-title {
     height: 120px;
     border-radius: 50%;
 }
-
-
-
 /*********************************** ARTICLE *******************************************************************/
 article {
   color: #ffffff;
@@ -484,7 +492,6 @@ article img {
   width: 350px;
   height: 248px;
   border-radius: 15px;
-
 }
 /********************************* COMPTE  ******************************************/
 input{
@@ -529,12 +536,10 @@ p, label {
     from, to { border-color: transparent }
     50% { border-color: rgb(255, 255, 255) }
   }
-
  /********************************* SERVICES  ******************************************/
 .text-service {
   color: #057952;
 }
-
 i {
   font-size: 50px;
   color: #057952;
@@ -577,6 +582,7 @@ hr{
   left: 0;
   background-color: #057952;
 }
+
 @media screen and (min-width: 768px) { 
   /**************************************** PRODUCTS ***********************************/
   .btn-article {
@@ -589,7 +595,12 @@ hr{
   .description{
     width: 100%;
   }
+  .form-control{
+    display: none !important;
+  }
+
 }
+
 /******************************** ORDINATEUR *****************************************/
 @media screen and (min-width: 1024px ) and (max-width : 2560px) {
   .navbar-light .navbar-nav .nav-link {
@@ -607,9 +618,13 @@ h2{
   margin-top: 30px;
   font-weight: 600;
 }
+
+.collapse.show{
+  display: none;
+}
+
 }
 @media screen and (min-width: 1440px ) and (max-width : 2560px) {
- 
   .title{
     font-size: 5em;
   }
@@ -621,6 +636,7 @@ h2{
     width: 300px;
   }
 }
+
 .mousemove{
   width: 20px;
   height: 20px;
@@ -630,8 +646,7 @@ h2{
   transform: translate(-50%, -50%);
   transition : 0.2s ease;
 }
-
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .pic-login{
     visibility: hidden;
   }
@@ -645,9 +660,20 @@ h2{
   h6 {
     font-size: 19px;
 }
-
 :hover>.form{
   transform:translateX(0);
+}
+.form-control{
+  display: none;
+}
+.d-flex{
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+}
+.bi-cart-fill {
+  color: #057952;
+  font-size: 20px;
 }
 
 
